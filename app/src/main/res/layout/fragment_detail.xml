@@ -1,0 +1,115 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:background="@color/White">
+
+        <LinearLayout
+            android:id="@+id/layoutTextViewQuery"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Black"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:contentDescription="@string/textViewTitulo_contentDescription"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageProduct"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_weight="50"
+            android:src="@drawable/ic_product"
+            android:contentDescription="@string/avatar"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/LightLightGray"
+            >
+
+            <TextView
+                android:id="@+id/textViewPrecio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/bullet"
+                android:drawablePadding="8dp"
+                android:contentDescription="@string/textViewPrecio_contentDescription"
+                android:textColor="@color/DarkGray"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/abc_action_bar_subtitle_text_size"
+
+                />
+
+            <TextView
+                android:id="@+id/textViewCantidadDisponible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/bullet"
+                android:drawablePadding="8dp"
+                android:contentDescription="@string/textViewCantidadDisponible_contentDescription"
+                android:textColor="@color/DarkGray"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/abc_action_bar_subtitle_text_size"
+
+                />
+
+            <TextView
+                android:id="@+id/textViewCantidadVendidas"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/bullet"
+                android:drawablePadding="8dp"
+                android:contentDescription="@string/textViewCantidadVendidas_contentDescription"
+                android:textColor="@color/DarkGray"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/abc_action_bar_subtitle_text_size"
+
+                />
+
+            <TextView
+                android:id="@+id/textViewCondition"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/bullet"
+                android:drawablePadding="8dp"
+                android:contentDescription="@string/textViewCondition_contentDescription"
+                android:textColor="@color/DarkGray"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/abc_action_bar_subtitle_text_size"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
